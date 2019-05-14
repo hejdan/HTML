@@ -1,0 +1,110 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="Wrapper">
+        <div class="Day">
+            <h1 id="Day"></h1>
+        </div>
+
+        <div class="search">
+                <form class="search" method="get" action="https://google.com/search?" autocomplete="off">
+                    <input class="searchbar" placeholder="search google..." name="q">
+                </form>
+                <form class="search" method="get" action="https://reddit.com/" autocomplete="off">
+                    <input class="searchbar" placeholder="search reddit..." name="r/">
+                </form>
+        </div>
+
+        <div class="Sections">
+            <!-- ###MEDIA### !-->
+            <div class="Section">
+                <div class="Section-Name">
+                    <h3>Media</h3>
+                </div>
+                <div class="Section-Links">
+                    <a href="https://www.youtube.com">
+                        <p class="normal">Youtube <img src="Icons/youtube.png"></p>
+                    </a>
+                    <a href="https://www.netflix.com">
+                        <p class="normal">Netflix <img src="Icons/netflix.png"></p>
+                    </a>
+                    <a href="https://www.reddit.com">
+                        <p class="normal">Reddit <img src="Icons/reddit.png"></p>
+                    </a>
+                    <a href="https://www.facebook.com">
+                        <p class="bottom">Facebook <img src="Icons/Facebook.png"></p>
+                    </a>
+                </div>
+            </div>
+            <!-- ###SCHOOL### !-->
+            <div class="Section">
+                <div class="Section-Name">
+                    <h3>School</h3>
+                </div>
+                <div class="Section-Links">
+                    <a href="https://sms.schoolsoft.se/lbs/sso">
+                        <p class="normal">SchoolSoft <img src="Icons/Schoolsoft.png"></p>
+                    </a>
+                    <a href="https://classroom.google.com/h">
+                        <p class="bottom">Classroom <img src="Icons/classroom.png"></p>
+                    </a>
+                </div>
+            </div>
+            <!-- ###OTHER### !-->
+            <div class="Section">
+                <div class="Section-Name">
+                    <h3>Other</h3>
+                </div>
+                <div class="Section-Links">
+                    <a href="https://www.typeracer.com">
+                        <p class="normal">Typeracer <img src="Icons/typeracer.png"></p>
+                    </a>
+                    <a href="https://www.hotmail.se">
+                        <p class="normal">Hotmail <img src="Icons/hotmail.png"></p>
+                    </a>
+                    <a href="https://www.humblebundle.com/store">
+                        <p class="normal">Humble Bundle <img src="Icons/humblebundle.png"></p>
+                    </a>
+                    <a href="http://ae27ff.meme.tips/about.php">
+                        <p class="bottom">ae27ff <img src="Icons/ae27"></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+        }
+        document.getElementById("Day").innerHTML = day;
+
+    </script>
+</body>
+
+</html>

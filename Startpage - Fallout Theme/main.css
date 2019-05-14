@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+}
+
+body {
+    background-color: #063315;
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    display: inline-grid;
+    align-content: center;
+    overflow: hidden;
+    position: absolute;
+    bottom: 35%;
+}
+
+.Sections {
+    padding-top: 1vh;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.Section {
+    width: 33vw;
+    height: auto;
+    border: 1px solid lime;
+    text-align: center;
+    align-content: center;
+    margin: 3px;
+    overflow: hidden;
+}
+
+.Section-Name {
+    color: lime;
+    overflow: hidden;
+    font-size: 2vh
+}
+
+.Section-Links a {
+    display: grid;
+    text-decoration: none;
+    font-size: 2vh;
+    margin: 5px;
+    color: lime;
+    overflow: hidden;
+}
+
+.section-links img {
+    display: inline-block;
+    height: 1.4vh;
+    margin-top: 1vh;
+    width: auto;
+}
+
+.Section-Links a:hover {
+    background-color: lime;
+    color: black;
+}
+
+.search {
+    align-content: center;
+    width: 100vw;
+    padding: 5vh;
+}
+
+.searchbar {
+    position: absolute;
+    align-content: center;
+    color: lime;
+    right: 25vw;
+    width: 50vw;
+    height: 3vh;
+    font-size: 2vh;
+    border: 1px solid lime;
+    background-color: #063315;
+    justify-content: center;
+    padding: 0.5vw;
+}
+
+::placeholder {
+    color: lime;
+}
+
+.Day {
+    display: grid;
+    color: lime;
+    width: 100vw;
+    height: 15vh;
+    text-align: center;
+    align-content: center;
+    font-size: 2vh;
+}
