@@ -57,8 +57,8 @@ body {
     overflow: hidden;
 }
 
-#Category-Links button{
-	margin-top: 1vh; 
+#Category-Links button {
+    margin-top: 1vh;
 }
 
 .Category-Links a:hover {
@@ -92,7 +92,7 @@ body {
     color: lime;
 }
 
-#Linkbutton{
+#Linkbutton {
     width: 25px;
     height: 25px;
     font-size: 15px;
@@ -101,22 +101,34 @@ body {
     border-radius: 50%;
     color: lime;
     margin-bottom: 5px;
+    transition: background 0.4s ease;
 }
 
-.button{
+#Linkbutton:hover {
+    background: #024102;
+}
+
+.button {
     width: 100vw;
     display: flex;
     justify-content: center;
     margin-top: 2vh;
 }
 
-.button #AddCategory{
+.button #AddCategory {
+    display: flex;
+    justify-content: space-around;
     width: 25px;
     height: 25px;
     font-size: 15px;
-    background: #039a03;
+    background: #026f02;
     border: 1px solid lime;
     border-radius: 50%;
     color: lime;
     margin-bottom: 5px;
+    transition: background 0.4s ease;
+}
+
+.button #AddCategory:hover {
+    background: #024102;
 }
