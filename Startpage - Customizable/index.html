@@ -8,38 +8,20 @@
 
 <body>
     <div class="Wrapper">
-        <div class="Day">
-            <h1 id="Day"></h1>
-        </div>
-        <div class="Time">
-            <h1 id="Time"></h1>
-        </div>
-
         <div class="search">
                 <form class="search" method="get" action="https://google.com/search?" autocomplete="off">
                     <input class="searchbar" placeholder="search google..." name="q">
                 </form>
         </div>
 
-        <div class="Categories">
-            <div id="Category">
-                <div class="Category-Name">
-                    <h3 id="Category-Name">No Name</h3>
-                </div>
-                <div id="Category-Links">
-                <button onclick="AddItem()">Click Me</button>
-                </div>
-            </div>
-            <div id="Category">
-                <div class="Category-Name">
-                    <h3 id="Category-Name">No Name</h3>
-                </div>
-                <div id="Category-Links">
-                <button onclick="AddItem()">Click Me</button>
-                </div>
-            </div>
+        <div id="Categories">
+            
         </div>
-    </div>
+        <div class="button">
+	<button onclick="AddCategory()" id="AddCategory">+</button>
+        </div>
+        </div>
+
     <script src="main.js"></script>
 </body>
 
